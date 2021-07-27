@@ -1,0 +1,77 @@
+<Html>
+<head>
+<title>Home Page</title>
+<style>
+.menu
+{
+	background-color:blue;
+	color:white;
+	height: 80px;
+	
+	
+	
+}
+.title
+{
+	padding-bottom:20px;
+	padding-top:20px;
+	font-size:25px;
+	
+}
+.container
+{
+   height:auto;
+   padding-left:300px;
+   padding-right:300px;
+   padding-top:80px;
+   border: solid 1px black;
+   
+}
+.btn
+{
+    background-color:blue;
+	height:50px;
+	width:100%;
+	color:white;
+	margin-bottom:20px;
+	font-size:22px;
+}
+.txt
+{
+ width:600px;
+ margin-bottom:20px;
+ font-size:22px;
+}
+
+.lb
+{
+font-size:22px;
+}
+</style>
+</head>
+<body>
+<div class="menu">
+<center><p class="title">Add Student <a href="home.html" style="font-size:28px;float:right;padding-right:20px;">Home</a></p></center>
+
+</div>
+<div class="container">
+
+<form action="addrecord.php" method="POST">
+	<lable class="lb">Enter RollNo</lable>
+	<input type="text" name="rollno" placeholder="Enter Rollno" class="txt" required="required">
+	<br>
+	<lable class="lb">Enter Name &nbsp; </lable>
+	<input type="text" name="name" placeholder="Enter Name of Student" class="txt" required="required">
+	<br>
+	<lable class="lb">Enter Sem &nbsp; &nbsp;</lable>
+	<input type="text" name="sem" placeholder="Enter Semister" class="txt" required="required">
+	<br>
+	<lable class="lb">Department &nbsp; </lable>
+	<input type="text" name="dept" placeholder="Enter  Name of Department" class="txt" required="required">
+	<input type="submit" value="submit" class="btn" name="submit">
+
+</form>
+
+</div>
+
+</body>
